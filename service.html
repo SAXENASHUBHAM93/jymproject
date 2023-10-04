@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        /* body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ecf0f1;
+        } */
+
+
+        body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+        }
+
+    *{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Oswald', sans-serif;
+    }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            display: none;
+        }
+
+        nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    color:white;
+    box-shadow: 0px 2px 6px 2px rgb(29, 27, 27);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    
+}
+
+.logo{
+    font: size 50px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    
+}
+
+#blue{
+   color: brown;
+   
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(12, 173, 173);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.nav button{
+   width: 70px;
+   height: 28p;
+   background-color:red ;
+}
+.menu a:first-child{
+    border-bottom: 2px solid;
+}
+.icon img {
+ width: 30px;
+ padding: 2px;    
+
+} 
+
+        .sidebar {
+            width: 0;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1001;
+            display: none;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .open-btn {
+            font-size: 20px;
+            cursor: pointer;
+            color: #fff;
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav a {
+                display: none;
+            }
+
+            .open-btn {
+                display: block;
+            }
+
+            nav input[type="text"] {
+                display: none;
+            }
+
+            .sidebar {
+                display: block;
+            }
+        }
+
+        /* section {
+            padding: 20px;
+        }
+
+        .service-container, .membership-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .service, .membership {
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover, .membership:hover {
+            background-color: #3498db;
+            color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service img, .membership img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        } */
+
+        .subscription-button {
+            background-color: #fff;
+            color: #3498db;
+            border: 1px solid #3498db;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .subscription-button:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        footer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+
+        .service{
+	padding:80px 0px;
+	background-color: #c11325;
+}
+
+.service .content{
+	-webkit-display:flex;
+	display:flex;
+}
+
+.service .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding:15px;
+}
+
+.service .content .text h2{
+	font-size: 30px;
+	font-weight: 500;
+	color:#ffffff;
+	padding:0px 0px 20px;
+}
+
+.service .content .text p{
+    font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	margin:0;
+	padding:0px 0px 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.service .content .text .btn{
+	padding:8px 30px;
+	background-color: #222222;
+	color:#ffffff;
+	text-decoration: none;
+	display: inline-block;
+	border:1px solid transparent;
+	cursor: pointer;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.service .content .text .btn:hover{
+	border:1px solid #ffffff;
+	color:#ffffff;
+	background-color: transparent;
+}
+.service .content .accordian-container{
+	margin-bottom: 5px;
+}
+.service .content .accordian-container .head{
+	background-color:rgba(0,0,0,0.2);
+	position: relative;
+	padding:12px 15px;
+	cursor: pointer;
+}
+.service .content .accordian-container .head .fa{
+	position: absolute;
+	right: 10px;
+	top:13px;
+	color:#ffffff;
+	height:30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	color:#ffffff;
+	border-radius: 50%;
+}
+.service .content .accordian-container .head h4{
+  font-size: 20px;
+  margin:0;
+  padding:0;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.service .content .accordian-container.active .head{
+  background-color: #222222;	
+}
+.service .content .accordian-container .body{
+	display: none;
+	padding:15px;
+	background-color: #222222;
+	border-top:1px solid #333333;
+}
+
+.service .content .accordian-container:nth-child(1) .body{
+	display: block;
+}
+.service .content .accordian-container .body p{
+    font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><span id="blue">BP</span>FG</div>
+
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="trainer.html">Trainer</a>
+          <a href="gallery.html">Workout Gallery</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">contact</a>
+          
+        
+        </div>
+
+        <div class="icon">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU"
+          />
+        </div>
+      </nav>
+
+
+      <section class="service" id="service">
+        <div class="container">
+             <div class="content">
+                   <div class="text box wow slideInLeft">
+                     <h2>Services</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                     <a href="" class="btn">Start Now</a>
+                   </div>
+                   <div class="accordian box wow slideInRight">
+                           <div class="accordian-container active">
+                               <div class="head">
+                                   <h4>Cardiovascular Equipment</h4>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <div class="body">
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                               </div>
+                           </div>
+                           <div class="accordian-container">
+                               <div class="head">
+                                   <h4>Strength Training Equipment</h4>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <div class="body">
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                               </div>
+                           </div>
+                           <div class="accordian-container">
+                               <div class="head">
+                                   <h4>Group Fitness Class</h4>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <div class="body">
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                               </div>
+                           </div>
+                           <div class="accordian-container">
+                               <div class="head">
+                                   <h4>Other Services</h4>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <div class="body">
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                               </div>
+                           </div>
+                   </div>
+             </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    
+          $(".ham-burger, .nav ul li a").click(function(){
+           
+            $(".nav").toggleClass("open")
+    
+            $(".ham-burger").toggleClass("active");
+          })      
+          $(".accordian-container").click(function(){
+              $(".accordian-container").children(".body").slideUp();
+              $(".accordian-container").removeClass("active")
+              $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+              $(this).children(".body").slideDown();
+              $(this).addClass("active")
+              $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+          })
+    
+           $(".nav ul li a, .go-down").click(function(event){
+             if(this.hash !== ""){
+    
+                  event.preventDefault();
+    
+                  var hash=this.hash; 
+    
+                  $('html,body').animate({
+                    scrollTop:$(hash).offset().top
+                  },800 , function(){
+                     window.location.hash=hash;
+                  });
+    
+                  // add active class in navigation
+                  $(".nav ul li a").removeClass("active")
+                  $(this).addClass("active")
+             }
+          })
+    })
+    
+    </script>
+    <script src="wow.min.js"></script>
+    <script>
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset:       0,
+          }
+        );
+        wow.init();
+      </script>
+    
+</body>
+</html>

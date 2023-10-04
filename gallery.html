@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="animate.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" > -->
+    <style>
+
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    color:white;
+    box-shadow: 0px 2px 6px 2px rgb(29, 27, 27);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    
+}
+
+.logo{
+    font: size 50px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    
+}
+
+#blue{
+   color: brown;
+   
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(12, 173, 173);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.nav button{
+   width: 70px;
+   height: 28p;
+   background-color:red ;
+}
+.menu a:first-child{
+    border-bottom: 2px solid;
+}
+.icon img {
+ width: 30px;
+ padding: 2px;    
+
+} 
+
+
+
+        .gallery .content{
+	-webkit-display: flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery .content .box{
+	flex:0 0 50%;
+	max-width: 50%;	
+}
+.gallery .content .box img{
+	display: block;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.gallery .content .box img:hover{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+.gallery h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+}
+
+
+.price-package{
+	padding: 80px 0px;
+	background-color: #ffffff;
+}
+.price-package h2{
+	font-size: 30px;
+	font-weight: 500;
+	color:#000000;
+	padding: 0px 0px 20px;
+	text-align: center;
+}
+
+.price-package .title-p{
+ font-size: 15px;
+ line-height: 20px;
+ color:#222222;
+ margin:0;
+ text-align: center;
+ padding:0 20% 50px;
+ font-family: 'Open-sans', sans-serif;
+}
+
+.price-package .content{
+	-webkit-display: flex;
+	display: flex;
+}
+.price-package .content .box{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding: 15px;
+}
+.price-package .content .box .inner{
+	background-color: #f0f0f0;
+}
+.price-package .content .box .inner .price-tag{
+	padding: 15px;
+	font-size: 20px;
+	background-color: #c11325;
+	color:#ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+.price-package .content .box .inner .text{
+	padding:30px 15px;
+	text-align: center;
+}
+.price-package .content .box .inner .text h3{
+	font-size: 24px;
+	color:#222222;
+	margin:0;
+	padding:0px 0px 20px;
+	font-weight: 700;
+}
+.price-package .content .box .inner .text p{
+ font-size: 15px;
+ line-height: 20px;
+ color:#222222;
+ margin:0;
+ text-align: center;
+ padding:0 0 5px;
+ font-family: 'Open-sans', sans-serif;	
+}
+.price-package .content .box .inner .text .btn{
+    padding: 8px 30px;
+    background-color: #c11325;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top: 10px;
+}
+.price-package .content .box .inner .text .btn:hover{
+	border-color:#222222;
+	color:#222222;
+	background-color: transparent;
+}
+.price-package .content .box .inner .img img{
+	width: 100%;
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><span id="blue">BP</span>FG</div>
+
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="trainer.html">Trainer</a>
+          <a href="gallery.html">Workout Gallery</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">contact</a>
+          
+        
+        </div>
+
+        <div class="icon">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU"
+          />
+        </div>
+      </nav>
+
+
+
+      <section class="gallery" id="gallery">
+        <h2>Workout Gallery</h2>
+       <div class="content">
+            <div class="box wow slideInLeft">
+                 <img src="images/gallery1.jpg" alt="gallery" />
+            </div>
+            <div class="box wow slideInRight">
+                 <img src="images/gallery2.jpg" alt="gallery" />
+            </div>
+            <div class="box wow slideInLeft">
+                 <img src="images/gallery3.jpg" alt="gallery" />
+            </div>
+            <div class="box wow slideInRight">
+                 <img src="images/gallery4.jpg" alt="gallery" />
+            </div>
+       </div>
+   </section>
+ <!-- End Gallery -->
+ 
+  <!-- Start Price -->
+   <section class="price-package" id="price">
+        <div class="container">
+              <h2>Choose Your Package</h2>
+              <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+              <div class="content">
+                    <div class="box wow bounceInUp">
+                          <div class="inner">
+                                 <div class="price-tag">
+                                       $59/Month
+                                 </div>
+                                 <div class="img">
+                                      <img src="images/price1.jpg" alt="price" />
+                                 </div>
+                                 <div class="text">
+                                       <h3>Body Building Training</h3>
+                                       <p>Get Free WiFi</p>
+                                       <p>Month to Month</p>
+                                       <p>No Time Restrictions</p>
+                                       <p>Gym and Cardio</p>
+                                       <p>Service Locker Rooms</p>
+                                       <a href="index.html" class="btn">Join Now</a>
+                                 </div>
+                          </div>
+                    </div>
+                    <div class="box wow bounceInUp" data-wow-delay="0.2s">
+                          <div class="inner">
+                                 <div class="price-tag">
+                                       $69/Month
+                                 </div>
+                                 <div class="img">
+                                      <img src="images/price2.jpg" alt="price" />
+                                 </div>
+                                 <div class="text">
+                                       <h3>Body Building Training</h3>
+                                       <p>Get Free WiFi</p>
+                                       <p>Month to Month</p>
+                                       <p>No Time Restrictions</p>
+                                       <p>Gym and Cardio</p>
+                                       <p>Service Locker Rooms</p>
+                                       <a href="" class="btn">Join Now</a>
+                                 </div>
+                          </div>
+                    </div>
+                    <div class="box wow bounceInUp" data-wow-delay="0.4s">
+                          <div class="inner">
+                                 <div class="price-tag">
+                                       $99/Month
+                                 </div>
+                                 <div class="img">
+                                      <img src="images/price3.jpg" alt="price" />
+                                 </div>
+                                 <div class="text">
+                                       <h3>Body Building Training</h3>
+                                       <p>Get Free WiFi</p>
+                                       <p>Month to Month</p>
+                                       <p>No Time Restrictions</p>
+                                       <p>Gym and Cardio</p>
+                                       <p>Service Locker Rooms</p>
+                                       <a href="" class="btn">Join Now</a>
+                                 </div>
+                          </div>
+                    </div>
+              </div>
+        </div>
+   </section>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact{
+	padding:80px 0px;
+	background-color: #222222;
+}
+
+.contact .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.contact .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+.contact .content .form input,
+.contact .content .form textarea{
+ height: 45px;
+ width: 100%;
+ padding:6px 12px;
+ margin-bottom: 25px;
+ background-color: transparent;
+ border:1px solid #ffffff;
+ font-family: 'Open-sans',sans-serif;
+ color:#ffffff;
+}
+.contact .content .form input:focus,
+.contact .content .form textarea:focus{
+ outline: none;
+}
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+	color:#ffffff;
+}
+.contact .content .form textarea{
+	height: 100px;
+}
+
+.contact .content .form button{
+	border:none;
+	outline: none;
+	box-shadow: none;
+	height: 45px;
+	padding:0px 50px;
+	border:1px solid transparent;
+	background-color: #c11325;
+	color:#ffffff;
+	font-size: 15px;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.contact .content .form button:hover{
+	background-color:transparent;
+	color:#ffffff; 
+    border-color:#ffffff;
+}
+
+.contact .content .text h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #c11325;
+    padding: 0px 0px 20px;
+}
+.contact .content .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .content .text .info ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.contact .content .text .info li{
+	display: block;
+	margin-bottom: 15px;
+	color:#ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-left: 40px;
+	font-family: 'Open-Sans',sans-serif;
+}
+.contact .content .text .info li span{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	font-size: 20px;
+	color:#c11325;
+}
+.contact .content .text .social {
+	padding-top: 30px;
+}
+.contact .content .text .social a{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #c11325;
+    text-decoration: none;	
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border:1px solid transparent;
+} 
+
+.contact .content .text .social a:hover{
+	background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .content .text .social a span{
+	color:#ffffff;
+	font-size: 20px;
+}
+
+.contact .content .text .copy{
+	border-top:1px solid #333333;
+	margin-top: 30px;
+	padding-top: 20px;
+	color:#c5c5c5;
+	font-size: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><span id="blue">BP</span>FG</div>
+
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="trainer.html">Trainer</a>
+          <a href="gallery.html">Workout Gallery</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">contact</a>
+          
+        
+        </div>
+
+        <div class="icon">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU"
+          />
+        </div>
+      </nav>
+
+      <section class="contact" id="contact">
+        <div class="container">
+           <div class="content">
+               <div class="box form wow slideInLeft">
+                  <form>
+                     <input type="text" placeholder="Enter Name">
+                     <input type="text" placeholder="Enter Email">
+                     <input type="text" placeholder="Enter Mobile">
+                     <textarea placeholder="Enter Message"></textarea>
+                     <button type="submit">Send Message</button>
+                  </form>
+               </div>
+               <div class="box text wow slideInRight">
+                    <h2>Get Connected with Gym</h2>
+                     <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                     <div class="info">
+                         <ul>
+                             <li><span class="fa fa-map-marker"></span> Gali no 11, House no 11, Lahore</li>
+                             <li><span class="fa fa-phone"></span> 92 9999999999</li>
+                             <li><span class="fa fa-envelope"></span> info@gym.com</li>
+                         </ul>
+                     </div>
+                     <div class="social">
+                          <a href=""><span class="fa fa-facebook"></span></a>
+                          <a href=""><span class="fa fa-linkedin"></span></a>
+                          <a href=""><span class="fa fa-skype"></span></a>
+                          <a href=""><span class="fa fa-youtube-play"></span></a>
+                     </div>
+   
+                     <div class="copy">
+                         PowerBy &copy; Shubham Saxena
+                     </div>
+               </div>
+           </div>
+        </div>
+     </section>
+
+
+</body>
+</html>

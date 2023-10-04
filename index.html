@@ -1,179 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webite Fitness & Gym</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      section {
+          padding: 20px;
+      }
+
+      .service-container, .membership-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .service, .membership {
+          width: 30%;
+          margin: 20px;
+          padding: 20px;
+          border-radius: 8px;
+          text-align: center;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .service:hover, .membership:hover {
+          background-color: #3498db;
+          color: #fff;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .service img, .membership img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 10px;
+      }
+
+  </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <span id="blue">BP</span>FG
-            </div>
+      <nav>
+        <div class="logo"><span id="blue">BP</span>FG</div>
 
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">services</a>
-                <a href="#">client</a>
-                <a href="#">our work</a>
-                <a href="#">contact</a>
-            </div>
-
-            <div class="icon">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU">
-
-            </div>
-        </nav>
-
-        <div class="container">
-            <div class="left"><img src="https://www.owlgen.in/wp-content/uploads/2020/07/Four-Ways-to-Reaching-Fitness-Goals-During-GYM-Workout.jpg"></div>
-            <div class="right">
-                <p>I am shubham </p>
-                <h1>Gym Trainer</h1>
-                <p>From raipur , doing gym is good for healthy life . it helps our boody to fit.it relase stress from our mind .</p>
-                <button class="btn">join us </button>
-            </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="trainer.html">Trainer</a>
+          <a href="gallery.html">Workout Gallery</a>
+          <a href="service.html">Services</a>
+          <a href="#">contact</a>
+          
+        
         </div>
 
+        <div class="icon">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU"
+          />
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="left">
+          <img
+            src="https://www.owlgen.in/wp-content/uploads/2020/07/Four-Ways-to-Reaching-Fitness-Goals-During-GYM-Workout.jpg"
+          />
+        </div>
+        <div class="right">
+          <p>I am trainer</p>
+          <h1>Gym Trainer</h1>
+          <p>
+            From raipur , doing gym is good for healthy life . it helps our
+            boody to fit.it relase stress from our mind .
+          </p>
+          <button class="btn">join us</button>
+        </div>
+      </div>
     </header>
     <section id="About">
-        <div class="About-row">
-            <div class="About-left-col">
-                <h1>About<span id="blue">me</span></h1>
-                <p id="p-title">I am a gym Trainer</p>
-                <p>From raipur , doing gym is good for healthy life . it helps our boody to fit.it relase stress from our mind </p>
-                <p>From raipur,doing gym is for healthy life.</p>
-                <button class="c-btn">read more</button>
-            </div>
+      <div class="About-row">
+        <div class="About-left-col">
+          <h1>About<span id="blue">me</span></h1>
+          <p id="p-title">I am a gym Trainer</p>
+          <p>
+            From raipur , doing gym is good for healthy life . it helps our
+            boody to fit.it relase stress from our mind
+          </p>
+          <p>From raipur,doing gym is for healthy life.</p>
+          <button class="c-btn">read more</button>
+        </div>
 
-            <div class="About-right-col">
-                <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-william-choquette-1954524.jpg&fm=jpg">
-            </div>
-            </div>
+        <div class="About-right-col">
+          <img
+            src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-william-choquette-1954524.jpg&fm=jpg"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="singup">
-        <div class="singup-row">
-            <div class="singup-left-col">
-                <img src="https://e0.pxfuel.com/wallpapers/521/132/desktop-wallpaper-fitness-and-background-gym-black.jpg">
-            </div>
-            <div class="singup-right-col">
-                <h1>BEING<span id="blue">BODy</span></h1>   
-                <h2>BULLDER</h2>
-                <button class="c-btn">singup</button>
-            </div>
+      <div class="singup-row">
+        <div class="singup-left-col">
+          <img
+            src="https://e0.pxfuel.com/wallpapers/521/132/desktop-wallpaper-fitness-and-background-gym-black.jpg"
+          />
         </div>
-
+        <div class="singup-right-col">
+          <h1>BEING<span id="blue">BODy</span></h1>
+          <h2>BULLDER</h2>
+          <button class="c-btn">singup</button>
+        </div>
+      </div>
     </section>
-             
+
     <section id="services">
-        <div class="services-info">
-            <h1>our<span id="blue">services</span></h1>
-            <p>what we provide</p>
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service" onclick="showServiceDetails('Diet Consultant')">
+              <img src="https://5.imimg.com/data5/BU/US/MY-45504265/dietetics-and-detox-consultancy-28weight-loss-diet-29-500x500.jpg" alt="Diet Consultant">
+              <h3>Diet Consultant</h3>
+              <p>Personalized diet plans tailored to your fitness goals.</p>
+          </div>
 
-        </div>
+          <div class="service" onclick="showServiceDetails('Diet Kit')">
+              <img src="https://i.pinimg.com/736x/4b/5d/95/4b5d95759576292428c0356decd77311.jpg" alt="Diet Kit">
+              <h3>Diet Kit</h3>
+              <p>Get a customized diet kit designed for your nutritional needs.</p>
+          </div>
 
-        <div class="services-row">
-            <div class="services-box">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                 <h2>cardio</h2>
-                <p>From raipur,doing gym is good for healthylife.</p>
-            </div>
+          <div class="service" onclick="showServiceDetails('Gym Trainer')">
+              <img src="https://www.youngisthan.in/wp-content/uploads/2015/09/gym-trainer-1280x720.jpg" alt="Gym Trainer">
+              <h3>Gym Trainer</h3>
+              <p>Professional trainers to guide and motivate you during workouts.</p>
+          </div>
 
-            <div class="services-box">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                <h2>cardio</h2>
-                   <p>From raipur,doing gym is good for healthylife.</p>
-               </div>
-
-               <div class="services-box">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                   <h2>cardio</h2>
-                   <p>From raipur,doing gym is good for healthylife.</p>
-               </div>
-
-               <div class="services-box">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                   <h2>cardio</h2>
-                   <p>From raipur,doing gym is good for healthylife.</p>
-               </div>
-
-               <div class="services-box">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                   <h2>cardio</h2>
-                   <p>From raipur,doing gym is good for healthylife.</p>
-               </div>
-
-                <div class="services-box">
-                    <i class="fa fa-suitcase" aria-hidden="true"></i>
-                   <h2>cardio</h2>
-                   <p>From raipur,doing gym is good for healthylife.</p>
-               </div>
-
-              
-        </div>
-    </section>
+          <div class="service" onclick="showServiceDetails('Gym Center')">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdl0PyCqreeWj88xcGGYPo08U13H90Vq4t2FyVAb-brAAKLjSxi-wmytzX1v-SWoAVvY&usqp=CAU" alt="Gym Center">
+              <h3>Gym Center</h3>
+              <p>State-of-the-art gym facility with a wide range of equipment.</p>
+          </div>
+      </div>
+  </section>
 
     <section id="members">
-        <div class="services-info">
-            <h1>our<span id="blue">members</span></h1>
-            <p>what our gym member</p>
+      <div class="services-info">
+        <h1>our<span id="blue">members</span></h1>
+        <p>what our gym member</p>
+      </div>
+
+      <div class="member-card">
+        <img
+          src="https://media.istockphoto.com/id/670051268/photo/people-at-the-gym-talking-to-the-receptionist.jpg?s=612x612&w=0&k=20&c=aD_wBFo5gWOdUhjvZo4mLXFde3__6e8S0lkMqdTKFOg="
+        />
+        <p>
+          Finding the best gym membership near you is no easy task. Whether
+          youre a workout novice or avid marathoner, a great facility with ample
+          amenities is important. You want something that’s close by and
+          affordable, but also a fitness club that has group classes at the
+          times that are most convenient for your schedule as well as ample
+          parking. Most gyms will offer you a complimentary tour of the facility
+          or a free day pass to test it out for yourself. Some clubs will even
+          offer you a free week to see if the facility is right for you. But
+          which gyms are worth looking into based on your personal fitness needs
+          and budget?
+        </p>
+        <h2>shubham gym client</h2>
+
+        <div class="icon">
+          <img src="" />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU"
+          />
         </div>
-
-        <div class="member-card">
-
-            <img src="https://media.istockphoto.com/id/670051268/photo/people-at-the-gym-talking-to-the-receptionist.jpg?s=612x612&w=0&k=20&c=aD_wBFo5gWOdUhjvZo4mLXFde3__6e8S0lkMqdTKFOg=">
-             <p>Finding the best gym membership near you is no easy task. Whether you’re a workout novice or avid marathoner, a great facility with ample amenities is important. You want something that’s close by and affordable, but also a fitness club that has group classes at the times that are most convenient for your schedule as well as ample parking.
-
-                Most gyms will offer you a complimentary tour of the facility or a free day pass to test it out for yourself. Some clubs will even offer you a free week to see if the facility is right for you. But which gyms are worth looking into based on your personal fitness needs and budget?
-             </p>
-              <h2>shubham gym client</h2> 
-             
-              <div class="icon">
-
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltnZ52C3Jjo2oXwjXIxRmmLvFYIDK4DX6sNqyQLhVIp4s6u4-06HgtXX8omujAZLolYQ&usqp=CAU">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8WNL22E6MrJR2mcrUq-lmb-EConbJtH7jw&usqp=CAU">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFDs8a3x5aFF3UCc6TbjQK774ACleftMMcg&usqp=CAU">
-              </div>
-        </div>
+      </div>
     </section>
 
     <section id="work">
-        <div class="">
-            <h1>Our<span id="blue">works</span></h1>
-            <p>what we provide</p>
+      <div class="services-info">
+        <h1>Our<span id="blue">works</span></h1>
+        <p>what we provide</p>
+      </div>
+
+      <div class="services-row">
+        <div class="Work-box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lENPodGKcVHDIv1dlLpTugh_icJwhV9uIQcBZbMvuSIjSCcyCJMK5X77iPMZb7_g520&usqp=CAU"
+          />
+        </div>
+        <div class="Work-box">
+          <img
+            src="data:image/jpeg;base64,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"
+          />
+        </div>
+        <div class="Work-box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Q-bTjVr1qaCGeRL2zCQTNqB5b634W5bv_w&usqp=CAU"
+          />
+        </div>
+        <div class="Work-box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuIfXR3P2H1cD3NmrutSjjem1nnGsdaqNmw&usqp=CAU"
+          />
+        </div>
+        <div class="Work-box">
+          <img
+            src="data:image/jpeg;base64,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"
+          />
+        </div>
+        <div class="Work-box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTaYpzkfXsU6tTKd7JB_xTm26i1lfuUVolng&usqp=CAU"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="services-info">
+        <h1>get in<span id="blue">Touch</span></h1>
+        <p>we are Available</p>
+      </div>
+      <div class="contact-row">
+        <div class="contact-left-col">
+          <div class="form">
+           
+            <form action="https://formspree.io/f/mleyowrz" method="POST">
+              <input type="text" name="email" placeholder="E-mail" required />
+              <input type="text" name="subject" placeholder="Subject" required /><br />
+              <textarea rows="10" cols="40" name="message" placeholder="Message" required></textarea>
+              <br /><button type="submit">Send</button>
+            </form>
+            
+          </div>
         </div>
 
-        <div class="services-row">
-            <div class="Work-box">
-                <img src="">
-            </div>
-            <div class="Work-box">
-                <img src="">
-            </div><div class="Work-box">
-                <img src="">
-            </div><div class="Work-box">
-                <img src="">
-            </div><div class="Work-box">
-                <img src="">
-            </div><div class="Work-box">
-                <img src="">
-            </div>
-        </div>
+        <div class="contact-right-col">
+          <h1><i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail</h1>
+          <p>shubham2312@gmail.com</p>
+          <br />
 
-        
+          <h1><i class="fa fa-phone naumber" aria-hidden="true"></i>mobile</h1>
+          <p>
+            9407578673<br />
+            6263990290
+          </p>
+          <br />
+
+          <h1>
+            <i class="fa fa-location-arrow" aria-hidden="true"></i>Address
+          </h1>
+          <p>
+            Address: NH 53, GE Road.<br />
+            beside Signature Homes 2, Labhandih.<br />
+            Raipur Chhattisgarh 492001
+          </p>
+        </div>
+      </div>
     </section>
 
     <div class="main"></div>
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <div class="text">
+                <h2>About US</h2>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing <br> elit. Quas voluptatem nesciunt sed placeat dolorum <br>odit facilis ducimus temporibus, quisquam veritatis <br> officiis eos.</p>
+                
+    
+            </div>
+            <div class="text">
+                <h2>Product</h2>
+                <p>our Design</p>
+                <p>Theme</p>
+                <p>Quality</p>
+                <p>Best Price</p>
+    
+            </div>
+            <div class="text">
+                <h2>Quality</h2>
+                <p>Focus</p>
+                <p>Customer</p>
+                <p>Review</p>
+                <p>Offer</p>
+    
+            </div>
+            <div class="text">
+                <h2>Adress</h2>
+                <p>4th Floore Gate</p>
+                <p>Abar Bazar</p>
+                <p>Bangalore</p>
+                 
+            </div>
+       
+    </footer>
 
-   <script src="app.js"></script> 
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
+
